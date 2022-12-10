@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://browser.sentry-cdn.com/5.25.0/bundle.tracing.min.js"
+    integrity="sha384-MxPEqyePOMqaz3prq1TexMEXtfnxqvet9uhebPAm5SI4Pz3Ga9HwbmE5FY2Bah20"
+    crossorigin="anonymous"></script>
+  <script>
+    Sentry.init({
+      dsn: 'https://757fae233bc24c2fab58be9f210339e4@o459786.ingest.sentry.io/5459340',
+      /*            beforeSend(event, hint) {
+                    if(event.exception) {
+                      Sentry.showReportDialog({
+                        eventId: event.event_id,
+                        labelClose: '',
+                        user: {
+                          email: 'SAL0110@vsb.cz',
+                          name: 'SAL0110',
+                        }
+                      });
+                    }
+                    return event;
+                  }*/
+    });
+  </script>
+  <style>
+    .sentry-error-embed .form-field:nth-of-type(1),
+    .sentry-error-embed .form-field:nth-of-type(2) {
+      display: none;
+    }
+
+    /*kelvin-notifications {display: none}*/
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/asciinema-player@2.6.1/resources/public/js/asciinema-player.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/asciinema-player@2.6.1/resources/public/css/asciinema-player.css">
+  <meta name="csrf-token" content="mtsD1ujOiS91d5C8xOTuCTz0QuuFJQAEvUhPpMp6Hwki1KN8UdmEJL5aCPsbz65b">
+
+  <meta name="django-webpush-vapid-key"
+    content="BDg-pHdUyz4eN3msJVpk80YcUrmwazVTFfyua2Mzy1w_KbYpF4qzFwc4iT4sL6qPx1iI-cYMAfMvQkeMbJkwb0E">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.d3ba72f2b380.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.45d142708b8e.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.37844a087227.png">
+  <link rel="manifest" href="/static/favicon/site.1da5f765b359.webmanifest">
+  <script src="/static/frontend.4bbfd5487f22.js"></script>
+  <link rel="stylesheet" href="/static/frontend.6b5256e47b05.css">
+  <title>
+    Obvod kruhu (Circle Circumference)
+    - SAL0110
+  </title>
+</head>
+
+<body>
+  <div>
+    <h2 id="definice-struktury-pro-kruh">Definice struktury pro kruh</h2>
+    <p>Naimplementujte strukturu pro reprezentaci kruhu <code>Circle</code>, kter&#225; reprezentuje kruh. Ten
+      m&#367;&#382;e b&#253;t reprezentov&#225;n polohou st&#345;edu v prostoru (<code>center</code>) a polom&#283;rem
+      (<code>radius</code>).</p>
+    <p>St&#345;ed kruhu definujte jako dal&#353;&#237; strukturu <code>Point2</code>, kter&#225; obsahuje dva atributy
+      <code>x</code> a <code>y</code> typu <code>float</code>.</p>
+    <h2 id="obvod-kruhu">Obvod kruhu</h2>
+    <p>Naimplemntujte funkci <code>circle_circumference</code>, kter&#225; vr&#225;t&#237; obvod kruhu podle dob&#345;e
+      zn&#225;m&#233;ho vzorce.</p>
+    <pre class="c"><code>float circle_perimeter( const Circle * self );</code></pre>
+    <p>Program na&#269;te ze <strong>standardn&#237;ho vstupu</strong> sou&#345;adnice polohy st&#345;edu a
+      polom&#283;ru. Na <strong>standardn&#237; v&#253;stup</strong> program vytiskne obvod zadan&#233;ho kruhu
+      spo&#269;&#237;tan&#233;ho pomoc&#237; funkce <code>circle_circumference</code>. Floatov&#233; &#269;&#237;slo
+      v&#253;sledku zaokrouhlete na dv&#283; desetinn&#225; m&#237;sta.</p>
+    <p>Pro z&#237;sk&#225;n&#237; hodnoty &#269;&#237;sla &#960; pou&#382;ijte konstantu <code>M_PI</code> z
+      hlavi&#269;kov&#233;ho souboru <code>math.h</code>.</p>
+    <p>P&#345;&#237;klad vstupu:</p>
+    <pre><code>0.0 0.0 1.0</code></pre>
+    <p>P&#345;&#237;klad v&#253;stupu:</p>
+    <pre><code>6.28</code></pre>
+    <p><strong>HINT:</strong> Form&#225;tov&#225;n&#253; floatov&#253;ch &#269;&#237;sel se provede ve funkci
+      <code>printf</code> nebo <code>fprintf</code> pomoc&#237; form&#225;tovac&#237;ho &#345;et&#283;zce
+      <code>%.Xf</code>, kde <code>X</code> je po&#269;et desetinn&#253;ch m&#237;st za desetinnou &#269;&#225;rkou
+      (te&#269;kouv US notaci).</p>
+  </div>
+
+</body>
+
+</html>
